@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+    
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Flatpicker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <!-- Swiper style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <!--  -->
+    <link href="css/animate.min.css" rel="stylesheet">
+
+    <!-- Css Main style -->
+    <link rel="stylesheet" href="css/main.css">
+
+
+    <title>Hotelier</title>
+</head>
+<body class="scroll-hedden">
+
+    <!-- Start Spinner -->
+    <div class="spinner show" id="spinner">
+        <span class="dotteds">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+    </div>
+    <!-- End Spinner -->
+
+    <!-- Start Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="" class="logo">
+                    <h2>hotelier</h2>
+                </a>
+
+                <button id="navbar-toggler" class="btn btn-primary navbar-toggle" type="button">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="navmenu-topbar" id="navmenu-topbar">
+                    <div class="topbar">
+                        <div class="info">
+                            <span class="email"><i class="fa-solid fa-envelope"></i> info@example.com</span>
+                            <span class="tel"><i class="fa-solid fa-phone"></i> +0123456789</span>
+                        </div>
+                        <ul class="social">
+                            <li><i class="fa-brands fa-facebook"></i></li>
+                            <li><i class="fa-brands fa-twitter"></i></li>
+                            <li><i class="fa-brands fa-youtube"></i></li>
+                            <li><i class="fa-brands fa-instagram"></i></li>
+                        </ul>
+                    </div>      
+                    <div class="nav-menu" id="nav-menu">
+                        <ul class="navbar-nav">
+                            <li class="navbar-item"><a href="#home" class="navbar-link active">home</a></li>
+                            <li class="navbar-item"><a href="#about" class="navbar-link">about</a></li>
+                            <li class="navbar-item"><a href="#rooms" class="navbar-link">rooms</a></li>
+                            <li class="navbar-item"><a href="#services" class="navbar-link">services</a></li>
+                            <li class="navbar-item dropdown show">
+                                <a href="#" class="navbar-link"> pages <i class="fa-solid fa-caret-down"></i></a>
+                                <ul class="dropdown-items">
+                                    <li class="dropdown-item"><a href="#booking">booking</a></li>
+                                    <li class="dropdown-item"><a href="#team">our team</a></li>
+                                    <li class="dropdown-item"><a href="#testimonial">testimonial</a></li>
+                                </ul>
+                            </li>
+                            <li class="navbar-item"><a href="#contact" class="navbar-link">contact</a></li>
+                        </ul>
+                        <a href="" class="premium"> 
+                            <span>premium version</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <main>
+        <article>
+            <!-- Start Home -->
+            <section class="home layer section" id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-text">
+                            <span class="wow slideInDown">luxurt living</span>
+                            <h1 class="wow slideInDown">Discover A barand luxurious hotel</h1>
+                            <div class="buttons">
+                                <button class="btn btn-primary wow fadeInLeft"><a href="#">our rooms</a></button>
+                                <button class="btn btn-secondary wow fadeInRight"><a href="#">book a room</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Home -->
+
+            <!-- Start Booking -->
+            <section class="booking section wow bounceInUp" id="booking">
+                <div class="container">
+                    <div class="form">
+                        <form action="">
+                            <div class="form-group">
+                                <input type="date" id="input" class="form-control" placeholder="Check In">
+                            </div>
+                            <div class="form-group">
+                                <input type="date" class="form-control" placeholder="Check out">
+                            </div>
+                            <div class="form-group">
+                                <select name="" id="" class="form-select">
+                                    <option value="Adult">Adult</option>
+                                    <option value="Adult 1">Adult 1</option>
+                                    <option value="Adult 2">Adult 2</option>
+                                    <option value="Adult 3">Adult 3</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select name="" id="" class="form-select">
+                                    <option value="child">child</option>
+                                    <option value="child 1">child 1</option>
+                                    <option value="child 2">child 2</option>
+                                    <option value="child 3">child 3</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">submit</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- End Booking -->
+
+            <!-- Start About -->
+            <section class="about section" id="about">
+                <div class="container">
+                    <div class="about-content">
+                        <div class="about-cards">
+                            <div class="section-title wow fadeInRight">
+                                <h2>about us</h2>
+                                <h3>Welocome <b>to</b> <span>hotelier</span></h3>
+                                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                            </div>
+
+                            <div class="cards">
+                                <div class="card wow fadeInLeft">
+                                    <div class="border">
+                                        <div class="border">
+                                            <div class="content">
+                                                <i class="fa-solid fa-hotel icon"></i>
+                                                <span data-toggle="counter-up">1013</span>
+                                                <h4>rooms</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card wow fadeIn">
+                                    <div class="border">
+                                        <div class="border">
+                                            <div class="content">
+                                                <i class="fa-solid fa-users-gear icon"></i>
+                                                <span data-toggle="counter-up">1234</span>
+                                                <h4>staffs</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card wow fadeInRight">
+                                    <div class="border">
+                                        <div class="border">
+                                            <div class="content">
+                                                <i class="fa-solid fa-users icon"></i>
+                                                <span data-toggle="counter-up">1234</span>
+                                                <h4>clients</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary wow fadeInRight"><a href="#">explore more</a></button>
+                        </div>
+
+                        <div class="about-images">
+                            <div class="image wow zoomIn" data-wow-delay="1s"><img src="./images/about-1.jpg" alt=""></div>
+                            <div class="image wow zoomIn" data-wow-delay="0.6s"><img src="./images/about-2.jpg" alt=""></div>
+                            <div class="image wow zoomIn" data-wow-delay="0.4s"><img src="./images/about-3.jpg" alt=""></div>
+                            <div class="image wow zoomIn" data-wow-delay="0.3s"><img src="./images/about-4.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End About -->
+
+            <!-- Start Rooms -->
+            <section class="rooms section" id="rooms">
+                <div class="container">
+                    <div class="section-title wow fadeInUp">
+                        <h2>our rooms</h2>
+                        <h3>explore our <span>rooms</span></h3>
+                    </div>
+
+                    <div class="cards">
+                        <div class="card wow fadeInUp">
+                            <div class="card-image">
+                                <img src="images/room-1.jpg" alt="">
+                                <span>$100/night</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title"> 
+                                    <h2>junior suite</h2>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="icons">
+                                    <span>
+                                        <i class="fa-solid fa-bed"></i>
+                                        3 bed
+                                    </span>
+                                    <span>
+                                        <i class="fa-solid fa-bath"></i>
+                                        2 bath
+                                    </span>
+                                    <span>
+                                        <i class="fa-solid fa-wifi"></i>
+                                        WiFi
+                                    </span>
+                                </div>
+                                <p class="descrption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit placeat aut labore.</p>
+                                <div class="buttons">
+                                    <button class="btn btn-primary"><a href="#">view detail</a></button>
+                                    <button class="btn btn-primary"><a href="#">book now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card wow fadeInUp">
+                            <div class="card-image">
+                                <img src="images/room-1.jpg" alt="">
+                                <span>$100/night</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title"> 
+                                    <h2>junior suite</h2>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="icons">
+                                    <span>
+                                        <i class="fa-solid fa-bed"></i>
+                                        3 bed
+                                    </span>
+                                    <span>
+                                        <i class="fa-solid fa-bath"></i>
+                                        2 bath
+                                    </span>
+                                    <span>
+                                        <i class="fa-solid fa-wifi"></i>
+                                        WiFi
+                                    </span>
+                                </div>
+                                <p class="descrption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit placeat aut labore.</p>
+                                <div class="buttons">
+                                    <button class="btn btn-primary"><a href="#">view detail</a></button>
+                                    <button class="btn btn-primary"><a href="#">book now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card wow fadeInUp">
+                            <div class="card-image">
+                                <img src="images/room-1.jpg" alt="">
+                                <span>$100/night</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title"> 
+                                    <h2>junior suite</h2>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="icons">
+                                    <span>
+                                        <i class="fa-solid fa-bed"></i>
+                                        3 bed
+                                    </span>
+                                    <span>
+                                        <i class="fa-solid fa-bath"></i>
+                                        2 bath
+                                    </span>
+                                    <span>
+                                        <i class="fa-solid fa-wifi"></i>
+                                        WiFi
+                                    </span>
+                                </div>
+                                <p class="descrption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit placeat aut labore.</p>
+                                <div class="buttons">
+                                    <button class="btn btn-primary"><a href="#">view detail</a></button>
+                                    <button class="btn btn-primary"><a href="#">book now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Rooms -->
+
+            <!-- Start Video -->
+            <section class="video section wow zoomIn">
+                <div class="video-content container">
+                    <div class="video-text">
+                        <div class="section-title">
+                            <h2>luxury living</h2>
+                            <h3>discover a brand luxurious hotel</h3>
+                            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                        </div>
+                        <div class="buttons">
+                            <button type="button" class="btn btn-primary"><a href="#">our rooms</a></button>
+                            <button type="button" class="btn btn-primary"><a href="#">book a room</a></button>
+                        </div>
+                    </div>
+
+                    <div class="watch-video">
+                        <span class="icon"><i class="fa-solid fa-play"></i></span>
+                        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/M9Z3QNS6J-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                    </div>
+                </div>
+            </section>
+            <!-- End Video -->
+
+            <!-- Start Our Services -->
+            <section class="services section" id="services">
+                <div class="container">
+                    <div class="section-title wow fadeInUp">
+                        <h2>our services</h2>
+                        <h3>explore our <span>services</span></h3>
+                    </div>
+                    
+                    <div class="cards">
+                        <div class="card wow fadeInUp">
+                            <span class="icon">
+                                <i class="fa-solid fa-hotel"></i>
+                            </span>
+                            <h2>rooms & appartment</h2>
+                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </div>
+                        <div class="card wow fadeInUp">
+                            <span class="icon">
+                                <i class="fa-solid fa-utensils"></i>
+                            </span>
+                            <h2>food & restaurant</h2>
+                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </div>
+                        <div class="card wow fadeInUp">
+                            <span class="icon">
+                                <i class="fa-solid fa-spa"></i>
+                            </span>
+                            <h2>spa & fitness</h2>
+                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </div>
+                        <div class="card wow fadeInUp">
+                            <span class="icon">
+                                <i class="fa-solid fa-swimmer"></i>
+                            </span>
+                            <h2>sports & gaming</h2>
+                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </div>
+                        <div class="card wow fadeInUp">
+                            <span class="icon">
+                                <i class="fa-solid fa-glass-cheers"></i>
+                            </span>
+                            <h2>event & party</h2>
+                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </div>
+                        <div class="card wow fadeInUp">
+                            <span class="icon">
+                                <i class="fa-solid fa-dumbbell"></i>
+                            </span>
+                            <h2>GYM & yoga</h2>
+                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Our Services -->
+
+            <!-- Start Testimonial -->
+            <section class="testimonial layer section wow zoomIn" id="testimonial">
+                <div class="container">
+                    
+                    <div class="testimonial-content">
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
+                                    <div class="info">
+                                        <img src="images/testimonial-1.jpg" alt="">
+                                        <div class="text">
+                                            <h4>clint name</h4>
+                                            <span>profession</span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="swiper-slide">
+                                    <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
+                                    <div class="info">
+                                        <img src="images/testimonial-2.jpg" alt="">
+                                        <div class="text">
+                                            <h4>clint name</h4>
+                                            <span>profession</span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="swiper-slide">
+                                    <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
+                                    <div class="info">
+                                        <img src="images/testimonial-3.jpg" alt="">
+                                        <div class="text">
+                                            <h4>clint name</h4>
+                                            <span>profession</span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="swiper-slide">
+                                    <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
+                                    <div class="info">
+                                        <img src="images/testimonial-4.jpg" alt="">
+                                        <div class="text">
+                                            <h4>clint name</h4>
+                                            <span>profession</span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>    
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        
+                        <div class="swiper-button-prev fa-solid fa-arrow-right"></div>
+                        <div class="swiper-button-next fa-solid fa-arrow-right"></div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- End Testimonial -->
+
+            <!-- Start Our Team -->
+            <section class="team section" id="team">
+                <div class="container">
+                    <div class="team-content">
+                        <div class="team-cards">
+                            <div class="section-title wow fadeInUp">
+                                <h2>our team</h2>
+                                <h3>Explore our <span>staffs</span></h3>
+                            </div>
+                        </div>
+
+                        <div class="cards">
+                            <div class="card wow fadeInUp">
+                                <div class="card-image">
+                                    <img src="images/team-1.jpg" alt="">
+                                    <div class="icons">
+                                        <a>
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                        <a>
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                        <a>
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title"> 
+                                        <h2>full name</h2>
+                                        <span>Designation</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card wow fadeInUp">
+                                <div class="card-image">
+                                    <img src="images/team-2.jpg" alt="">
+                                    <div class="icons">
+                                        <a>
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                        <a>
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                        <a>
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title"> 
+                                        <h2>full name</h2>
+                                        <span>Designation</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card wow fadeInUp">
+                                <div class="card-image">
+                                    <img src="images/team-3.jpg" alt="">
+                                    <div class="icons">
+                                        <a>
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                        <a>
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                        <a>
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title"> 
+                                        <h2>full name</h2>
+                                        <span>Designation</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card wow fadeInUp">
+                                <div class="card-image">
+                                    <img src="images/team-4.jpg" alt="">
+                                    <div class="icons">
+                                        <a>
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                        <a>
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                        <a>
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title"> 
+                                        <h2>full name</h2>
+                                        <span>Designation</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Start Newsletter -->
+            <section class="newsletter section wow fadeIn">
+                <div class="container">
+                    <div class="box">
+                        <div class="border">
+                            <div class="border">
+                                <div class="box-content">
+                                    <div class="section-title">
+                                        <h3>subscribe our <span>newsletter</span></h3>
+                                    </div>
+                                    <div class="form">
+                                        <form action="">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" placeholder="Enter your email">
+                                                <button type="submit" class="btn btn-primary">submit</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Newsletter -->
+
+            <!-- Start Footer -->
+            <footer class="footer section">
+                <div class="container">
+                    <div class="boxs">
+                        <div class="box card">
+                            <div class="footer-card">
+                                <h2>hotelier</h2>
+                                <p>Download <a href="#">Hotelier – Premium Version</a>, build a professional website for your hotel business and grab the attention of new visitors upon your site’s launch.</p>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="section-title">
+                                <h2><span>company</span></h2>
+                            </div>
+                            <ul class="list">
+                                <li><a href="#"><i class="fa-solid fa-angle-right"></i> about us</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angle-right"></i> contact us</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angle-right"></i> privacy policy</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angle-right"></i> terms & codition</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angle-right"></i> spport</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="box">
+                            <div class="section-title">
+                                <h2><span>contact</span></h2>
+                            </div>
+                            <ul class="list">
+                                <li><a href="#"><i class="fa-solid fa-location-dot"></i> 123 street, new york, USA</a></li>
+                                <li><a href="#"><i class="fa-solid fa-phone"></i> +01234567890</a></li>
+                                <li><a href="#"><i class="fa-solid fa-envelope"></i> info@example.com</a></li>
+                                <li class="social-links">
+                                    <ul class="links">
+                                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="box">
+                            <div class="section-title">
+                                <h2><span>services</span></h2>
+                            </div>
+                            <ul class="list">
+                                <li><a href="#"><i class="fa-solid fa-angle-right"></i> food & restaurant</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angle-right"></i> spa & fitness</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angle-right"></i> sports & gaming</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angle-right"></i>  event & party</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angle-right"></i> GYM & yoga</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="copyright">
+                        <h2>&copy; your site name, All right reserved. designed by AhmedMagdy</h2>
+                        <ul class="links">
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">cookies</a></li>
+                            <li><a href="#">help</a></li>
+                            <li><a href="#">FQAs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+            <!-- End Footer -->
+
+            <!-- Back to top -->
+            <button class="btn btn-primary" id="back-top-top"><i class="fa-solid fa-arrow-up"></i></button>
+
+        </article>
+    </main>
+    
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- <script src="js/wow.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

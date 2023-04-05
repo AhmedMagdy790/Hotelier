@@ -148,8 +148,22 @@ body {
   background: var(--white);
   font-family: var(--ff-poppins);
 }
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: var(--light);
+  box-shadow: var(--shadow-2) inset;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+}
 body.scroll-hedden {
   overflow: hidden;
+}
+
+html,
+body {
+  overflow-X: hidden;
+  max-width: 100%;
 }
 
 .row {

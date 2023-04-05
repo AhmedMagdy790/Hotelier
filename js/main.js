@@ -24,7 +24,10 @@ const showMenu = (toggleId, navId) => {
 }
 showMenu('#navbar-toggler', '#navmenu-topbar');
 
-new flatpickr('input[type=date]');
+// flatpickr
+new flatpickr('input[type=date]', {
+  disableMobile: "true"
+});
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
